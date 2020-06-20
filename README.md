@@ -1,6 +1,6 @@
-# 11ty Starter
+# Navigating pronouns in the workplace
 
-This is jplace's [11ty](https://www.11ty.dev/) starter. It's configured to be deployed to [Netlify](https://www.netlify.com/).
+A static site for helping everyone learn to navigate pronoun usage in the workplace.
 
 ## Build
 
