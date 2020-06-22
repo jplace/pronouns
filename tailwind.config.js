@@ -8,6 +8,14 @@ module.exports = {
         aqua: "#00c4cc",
         sunshine: "#ffb331",
       },
+      fontFamily: {
+        "league-spartan": ["LeagueSpartan", "sans-serif"],
+        "open-sans": ["OpenSans", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
+      },
+      spacing: {
+        outer: "2vw",
+      },
     },
   },
   variants: {},
