@@ -1,3 +1,89 @@
-section {
-  height: 25vw;
+.section {
+  @apply z-10 relative;
+  @apply overflow-visible;
+  height: 22vw;
+
+  .adjusted-content {
+    margin-top: -4vw;
+  }
+}
+
+.aside {
+  @apply z-20;
+  @apply absolute bottom-0 left-0;
+  width: 30vw;
+  height: 30vw;
+  padding-top: 5vw;
+  padding-right: 4vw;
+  @apply pl-outer pb-outer;
+  @apply overflow-hidden;
+
+  &::before {
+    position: absolute;
+    bottom: -20%;
+    left: -20%;
+    content: "";
+    width: 115%;
+    height: 115%;
+    border-radius: 50%;
+    @apply bg-adobe;
+  }
+}
+
+/* From https://codepen.io/ahmadnassri/pen/bByOKv */
+.separator {
+  @apply z-0;
+  position: relative;
+  width: 100%;
+  height: 8vw;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  }
+
+  &.reverse {
+    transform: rotateY(180deg);
+  }
+
+  &.one {
+    &::before {
+      background-color: theme("colors.beige");
+    }
+
+    &::after {
+      background-color: theme("colors.tan");
+    }
+  }
+
+  &.two {
+    &::before {
+      background-color: theme("colors.tan");
+    }
+
+    &::after {
+      background-color: theme("colors.aqua");
+    }
+  }
+
+  &.three {
+    &::before {
+      background-color: theme("colors.aqua");
+    }
+
+    &::after {
+      background-color: theme("colors.sunshine");
+    }
+  }
 }

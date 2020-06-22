@@ -1,5 +1,13 @@
 module.exports = {
   theme: {
+    fontSize: {
+      xs: "1vw",
+      sm: "1.5vw",
+      md: "2vw",
+      lg: "1.825vw",
+      xl: "2.25vw",
+      "2xl": "4vw",
+    },
     extend: {
       colors: {
         beige: "#f5f5ef",
@@ -12,9 +20,15 @@ module.exports = {
         "league-spartan": ["LeagueSpartan", "sans-serif"],
         "open-sans": ["OpenSans", "sans-serif"],
         roboto: ["Roboto", "sans-serif"],
+        nunito: ["Nunito", "sans-serif"],
       },
       spacing: {
-        outer: "2vw",
+        base: "1.75vw",
+        md: "2vw",
+        outer: "3vw",
+      },
+      lineHeight: {
+        bound: "1.125",
       },
     },
   },
