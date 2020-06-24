@@ -1,7 +1,7 @@
 {
   "name": "start-11ty",
   "version": "1.0.0",
-  "description": "This is jplace's 11ty starter.",
+  "description": "A guide to handling instances of misgendering with grace",
   "main": "index.js",
   "scripts": {
     "build:site": "npx @11ty/eleventy",
