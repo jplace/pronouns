@@ -1,14 +1,12 @@
 module.exports = {
   theme: {
     fontSize: {
-      xs: "2vw",
-      sm: "2.5vw",
-      md: "3vw",
-      lg: "2.825vw",
-      xl: "3.25vw",
-      "2xl": "5vw",
-      "section-header": "4vw",
-      "section-detail": "2vw",
+      "header-xs": "1.25vw",
+      "header-sm": "2.5vw",
+      "header-md": "3vw",
+      "header-lg": "4.5vw",
+      "section-header": "3.5vw",
+      "section-detail": "1.75vw",
     },
     extend: {
       colors: {
