@@ -3,34 +3,53 @@
 .section {
   @apply z-10 relative;
   @apply flex-none;
-  height: 25.25vw;
+  @apply flex items-center;
+  @apply p-outer;
   @apply overflow-visible;
 
   .adjusted-content {
     @apply flex;
-    margin-top: -6vw;
+    margin-top: 0;
+  }
+
+  @screen md {
+    @apply block;
+    height: 25.25vw;
+    @apply p-md/outer;
+
+    .adjusted-content {
+      margin-top: -6vw;
+    }
   }
 }
 
 .aside {
   @apply z-20;
-  @apply absolute bottom-0 left-0;
-  width: 32.75vw;
-  height: 32.75vw;
-  padding-top: 5.5vw;
-  padding-right: 4vw;
-  @apply pl-outer pb-outer;
-  @apply overflow-hidden;
+  @apply flex items-center;
+  @apply p-outer;
+  @apply bg-adobe;
 
-  &::before {
-    position: absolute;
-    bottom: -20%;
-    left: -20%;
-    content: "";
-    width: 115%;
-    height: 115%;
-    border-radius: 50%;
-    @apply bg-adobe;
+  @screen md {
+    @apply absolute bottom-0 left-0;
+    @apply block;
+    width: 33.25vw;
+    height: 33.25vw;
+    padding-top: 5vw;
+    padding-right: 4vw;
+    @apply pl-md/outer pb-md/outer;
+    @apply bg-transparent;
+    @apply overflow-hidden;
+
+    &::before {
+      position: absolute;
+      bottom: -20%;
+      left: -20%;
+      content: "";
+      width: 115%;
+      height: 115%;
+      border-radius: 50%;
+      @apply bg-adobe;
+    }
   }
 }
 
@@ -40,18 +59,11 @@
   position: relative;
   @apply flex-grow;
   width: 100%;
-  min-height: 8vw;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    clip-path: polygon(100% 0, 0 0, 0 100%);
-  }
+  min-height: 30vmin;
 
   &::after {
     position: absolute;
+    bottom: -1px;
     content: "";
     width: 100%;
     height: 100%;
@@ -63,9 +75,7 @@
   }
 
   &.one {
-    &::before {
-      background-color: theme("colors.beige");
-    }
+    background-color: theme("colors.beige");
 
     &::after {
       background-color: theme("colors.tan");
@@ -73,9 +83,7 @@
   }
 
   &.two {
-    &::before {
-      background-color: theme("colors.tan");
-    }
+    background-color: theme("colors.tan");
 
     &::after {
       background-color: theme("colors.aqua");
@@ -83,12 +91,37 @@
   }
 
   &.three {
-    &::before {
-      background-color: theme("colors.aqua");
-    }
+    background-color: theme("colors.aqua");
 
     &::after {
       background-color: theme("colors.sunshine");
     }
+  }
+
+  &.four {
+    background-color: theme("colors.sunshine");
+
+    &::after {
+      background-color: theme("colors.adobe");
+    }
+  }
+
+  @screen md {
+    min-height: 8vw;
+  }
+}
+
+.animated-link {
+  background-image: linear-gradient(
+    120deg,
+    theme("colors.aqua") 0%,
+    theme("colors.sunshine") 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+  &:hover {
+    background-size: 100% 88%;
   }
 }

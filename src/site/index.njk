@@ -6,7 +6,7 @@ title: jplace's 11ty Starter
 <!-- prettier-ignore -->
 {% macro sectionHeader(moreClasses="") %}
 <h2
-  class="font-roboto font-medium text-section-header text-white leading-bound {{
+  class="font-roboto font-medium text-section-header md:text-md/section-header text-white leading-bound {{
     moreClasses
   }}"
 >
@@ -17,44 +17,59 @@ title: jplace's 11ty Starter
 {% endmacro %}
 
 <!-- prettier-ignore -->
-{% macro sectionDetails(moreClasses="") %}
-<p class="font-open-sans text-section-detail text-black {{ moreClasses }}">
+{% macro sectionDetails(moreClasses="", style="") %}
+<p
+  style="{{ style }}"
+  class="font-open-sans text-section-detail md:text-md/section-detail text-black {{
+    moreClasses
+  }}"
+>
   <!-- prettier-ignore -->
   {{ caller() }}
 </p>
 <!-- prettier-ignore -->
 {% endmacro %}
 
-<section class="section bg-beige p-outer">
+<section class="section bg-beige">
   <div>
     <p
-      class="font-league-spartan text-header-sm text-aqua leading-none mb-base"
+      class="font-league-spartan text-header-sm md:text-md/header-sm text-aqua leading-none mb-base md:mb-md/base"
     >
       We all make mistakes!
     </p>
     <h1
-      class="font-league-spartan text-header-lg text-black leading-none mb-md"
+      class="font-league-spartan text-header-lg md:text-md/header-lg text-black leading-none mb-md md:mb-md/md"
     >
       Navigating Pronouns<br />in the Workplace
     </h1>
     <p
-      class="font-roboto font-medium text-header-md text-aqua leading-bound mb-md"
+      class="font-roboto font-medium text-header-md md:text-md/header-md text-aqua leading-bound mb-md md:mb-md/md"
     >
       A guide to handling instances of<br />misgendering with grace
     </p>
-    <p class="font-nunito text-header-xs text-black leading-tight">
-      Content by Riley Pratt (<a href="#">@bae.witch</a>)<br />
-      Design by Iris F (<a href="#">@sunny_side_vibes</a>)
+    <p
+      class="font-nunito text-header-xs md:text-md/header-xs text-black leading-tight"
+    >
+      Content by Riley Pratt (<a
+        class="animated-link"
+        href="https://www.instagram.com/bae.witch/"
+        >@bae.witch</a
+      >)<br />
+      Design by Iris F (<a
+        class="animated-link"
+        href="https://www.instagram.com/sunny_side_vibes/"
+        >@sunny_side_vibes</a
+      >)
     </p>
   </div>
 </section>
 <div class="separator one"></div>
-<section class="section font-open-sans text-black bg-tan p-outer">
+<section class="section bg-tan">
   <div class="adjusted-content">
-    <div style="width: 60%;"></div>
-    <div style="width: 40%;">
-      {% call sectionHeader("mb-sm text-right") %} Catch yourself?<br />Correct
-      yourself.
+    <div class="hidden md:block md:w-2/3"></div>
+    <div class="md:w-1/3">
+      {% call sectionHeader("mb-sm md:mb-md/sm text-right") %} Catch
+      yourself?<br />Correct yourself.
       <!-- prettier-ignore -->
       {% endcall %}
       <!-- prettier-ignore -->
@@ -68,39 +83,40 @@ title: jplace's 11ty Starter
   </div>
 </section>
 <div class="separator two reverse"></div>
-<section class="section font-roboto text-white bg-aqua p-outer">
+<section class="section bg-aqua">
   <div class="adjusted-content">
-    <div style="width: 40%;">
+    <div class="md:w-2/5">
       <!-- prettier-ignore -->
-      {% call sectionHeader("mb-sm") %}
+      {% call sectionHeader("mb-sm md:mb-md/sm") %}
       When should I step in if someone else makes a mistake?
       <em><span class="underline">Always.</span></em>
       <!-- prettier-ignore -->
       {% endcall %}
       <!-- prettier-ignore -->
       {% call sectionDetails() %}
-      <em>Do not apologize.</em> An apology puts the onus on the misgendered
-      person to make the speaker feel better rather than centering the resposne
-      on the feelings of the person impacted.
+      Make it <strong>a habit</strong>. Be quick. The faster you get at
+      correcting, the less you'll struggle with the interanl complexities of
+      <em>"should I, or shouldn't I?"</em>
+      <strong>The answer is always yes</strong>, so there's no need for doubt!
       <!-- prettier-ignore -->
       {% endcall %}
     </div>
-    <div style="width: 60%;"></div>
+    <div class="hidden md:block md:w-3/5"></div>
   </div>
 </section>
 <div class="separator three"></div>
-<section class="relative section text-white bg-sunshine p-outer">
+<section class="section bg-sunshine">
   <div class="adjusted-content">
-    <div style="width: 60%;"></div>
-    <div style="width: 40%;">
+    <div class="hidden md:block md:w-1/2"></div>
+    <div class="md:w-1/2">
       <!-- prettier-ignore -->
-      {% call sectionHeader("text-right mb-sm") %}
+      {% call sectionHeader("text-right mb-sm md:mb-md/sm") %}
       Did someone correct you?<br />Just say
       <em>"<span class="underline">Thanks.</span>"</em>
       <!-- prettier-ignore -->
       {% endcall %}
       <!-- prettier-ignore -->
-      {% call sectionDetails("text-right") %}
+      {% call sectionDetails("md:pl-1/3 text-right") %}
       <em>Do not apologize.</em> An apology puts the onus on the misgendered
       person to make the speaker feel better rather than centering the resposne
       on the feelings of the person impacted.
@@ -108,19 +124,20 @@ title: jplace's 11ty Starter
       {% endcall %}
     </div>
   </div>
-  <aside class="aside">
-    <div class="relative">
-      <!-- prettier-ignore -->
-      {% call sectionHeader("mb-sm") %}
-            Ask. Don't<br />assume.
-      <!-- prettier-ignore -->
-      {% endcall %}
-      <!-- prettier-ignore -->
-      {% call sectionDetails() %}
-            Normalizing asking for someone's pronouns is important and helps trans and
-        non-binary people everywhere!
-      <!-- prettier-ignore -->
-      {% endcall %}
-    </div>
-  </aside>
 </section>
+<div class="md:hidden separator four reverse"></div>
+<aside class="aside">
+  <div class="relative">
+    <!-- prettier-ignore -->
+    {% call sectionHeader("mb-sm md:mb-md/sm") %}
+          Ask. Don't assume.
+    <!-- prettier-ignore -->
+    {% endcall %}
+    <!-- prettier-ignore -->
+    {% call sectionDetails() %}
+          Normalizing asking for someone's pronouns is important and helps trans and
+      non-binary people everywhere!
+    <!-- prettier-ignore -->
+    {% endcall %}
+  </div>
+</aside>
