@@ -1,12 +1,14 @@
 module.exports = {
   theme: {
     fontSize: {
-      xs: "1vw",
-      sm: "1.5vw",
-      md: "2vw",
-      lg: "1.825vw",
-      xl: "2.25vw",
-      "2xl": "4vw",
+      xs: "2vw",
+      sm: "2.5vw",
+      md: "3vw",
+      lg: "2.825vw",
+      xl: "3.25vw",
+      "2xl": "5vw",
+      "section-header": "4vw",
+      "section-detail": "2vw",
     },
     extend: {
       colors: {
@@ -23,6 +25,7 @@ module.exports = {
         nunito: ["Nunito", "sans-serif"],
       },
       spacing: {
+        sm: "1.25vw",
         base: "1.75vw",
         md: "2vw",
         outer: "3vw",
