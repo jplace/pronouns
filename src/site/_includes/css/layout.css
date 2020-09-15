@@ -55,7 +55,7 @@
 
 /* From https://codepen.io/ahmadnassri/pen/bByOKv */
 .separator {
-  @apply z-0;
+  @apply z-10;
   position: relative;
   @apply flex-grow;
   width: 100%;
@@ -71,7 +71,9 @@
   }
 
   &.reverse {
-    transform: rotateY(180deg);
+    &::after {
+      transform: rotateY(180deg);
+    }
   }
 
   &.one {
@@ -124,4 +126,8 @@
   &:hover {
     background-size: 100% 88%;
   }
+}
+
+.correcting-oneself {
+  width: 33vw;
 }
