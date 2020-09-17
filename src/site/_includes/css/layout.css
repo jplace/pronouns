@@ -132,7 +132,7 @@
 
 .authors-md {
   @apply absolute;
-  bottom: 44%;
+  bottom: 46%;
   left: 0;
   @apply p-outer;
 
@@ -140,14 +140,6 @@
     @apply p-md/outer;
   }
 }
-
-/* .image-one {
-  width: 50vmin;
-
-  @screen md {
-    @apply hidden;
-  }
-} */
 
 .image-one-md {
   @apply absolute;
