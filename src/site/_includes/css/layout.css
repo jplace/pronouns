@@ -140,10 +140,15 @@
 }
 
 .image-one {
+  @apply hidden;
   @apply absolute;
   bottom: 0;
   right: 0;
   width: 40vw;
+
+  @screen md {
+    @apply block;
+  }
 }
 
 .image-two {
@@ -170,6 +175,24 @@
   @apply z-30;
   @apply absolute;
   bottom: 0;
-  left: 27%;
+  left: auto;
+  right: 0;
   width: 26vw;
+
+  @screen md {
+    left: 27%;
+    right: auto;
+  }
+}
+
+.image-five {
+  @apply block;
+  @apply absolute;
+  bottom: 0;
+  right: 0;
+  width: 40vw;
+
+  @screen md {
+    @apply hidden;
+  }
 }
