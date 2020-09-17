@@ -31,8 +31,8 @@ title: Navigating Pronouns in the Workplace
 {% endmacro %}
 
 <section class="section bg-beige">
-  <div class="flex">
-    <div class="w-full md:w-7/12">
+  <div class="flex flex-col md:flex-row justify-between">
+    <div class="md:w-7/12">
       <p
         class="font-league-spartan text-header-sm md:text-md/header-sm text-aqua leading-bound md:leading-none mb-base md:mb-md/base"
       >
@@ -48,36 +48,76 @@ title: Navigating Pronouns in the Workplace
       >
         A guide to handling instances of misgendering with grace
       </p>
+      <div class="md:hidden">
+        <p
+          class="font-nunito text-header-xs md:text-md/header-xs text-black leading-tight"
+        >
+          Content by Riley Pratt (<a
+            class="animated-link"
+            href="https://www.instagram.com/bae.witch/"
+            >@bae.witch</a
+          >)
+        </p>
+        <p
+          class="font-nunito text-header-xs md:text-md/header-xs text-black leading-tight"
+        >
+          Design by Iris F (<a
+            class="animated-link"
+            href="https://www.instagram.com/sunny_side_vibes/"
+            >@sunny_side_vibes</a
+          >)
+        </p>
+        <p
+          class="font-nunito text-header-xs md:text-md/header-xs text-black leading-tight"
+        >
+          Art by April Zhang (<a
+            class="animated-link"
+            href="https://www.instagram.com/apezhang/"
+            >@apezhang</a
+          >)
+        </p>
+      </div>
     </div>
-    <div class="w-0 md:w-5/12"></div>
+    <div class="md:w-5/12"></div>
   </div>
 </section>
 <div class="separator one">
-  <p
-  class="author-credits font-nunito text-header-xs md:text-md/header-xs text-black leading-tight"
->
-  Content by Riley Pratt (<a
-    class="animated-link"
-    href="https://www.instagram.com/bae.witch/"
-    >@bae.witch</a
-  >)<br />
-  Design by Iris F (<a
-    class="animated-link"
-    href="https://www.instagram.com/sunny_side_vibes/"
-    >@sunny_side_vibes</a
-  >)<br />
-  Art by April Zhang (<a
-    class="animated-link"
-    href="https://www.instagram.com/apezhang/""
-    >@apezhang</a
-  >)
-</p>
-  <img class="image-one" src="/images/when_corrected.png" />
+  <div class="authors-md">
+    <p
+      class="font-nunito text-header-xs md:text-md/header-xs text-black leading-tight"
+    >
+      Content by Riley Pratt (<a
+        class="animated-link"
+        href="https://www.instagram.com/bae.witch/"
+        >@bae.witch</a
+      >)
+    </p>
+    <p
+      class="font-nunito text-header-xs md:text-md/header-xs text-black leading-tight"
+    >
+      Design by Iris F (<a
+        class="animated-link"
+        href="https://www.instagram.com/sunny_side_vibes/"
+        >@sunny_side_vibes</a
+      >)
+    </p>
+    <p
+      class="font-nunito text-header-xs md:text-md/header-xs text-black leading-tight"
+    >
+      Art by April Zhang (<a
+        class="animated-link"
+        href="https://www.instagram.com/apezhang/"
+        >@apezhang</a
+      >)
+    </p>
+  </div>
+  <img class="image-one-md" src="/images/when_corrected.png" />
 </div>
 <section class="section bg-tan">
-  <div class="adjusted-content flex-row-reverse md:flex-row">
-    <div class="w-1/3 md:w-2/3"></div>
-    <div class="w-2/3 md:w-1/3">
+  <div
+    class="adjusted-content flex flex-col md:flex-row-reverse justify-between"
+  >
+    <div class="md:w-1/3">
       {% call sectionHeader("mb-sm md:mb-md/sm text-left md:text-right") %}
       Catch yourself? Correct yourself.
       <!-- prettier-ignore -->
@@ -90,14 +130,17 @@ title: Navigating Pronouns in the Workplace
       <!-- prettier-ignore -->
       {% endcall %}
     </div>
+    <div class="flex justify-center md:w-2/3">
+      <img class="image-two" src="/images/correcting_oneself.png" />
+    </div>
   </div>
 </section>
 <div class="separator two reverse">
-  <img class="image-two" src="/images/correcting_oneself.png" />
+  <img class="image-two-md" src="/images/correcting_oneself.png" />
 </div>
 <section class="section bg-aqua">
-  <div class="adjusted-content">
-    <div class="w-2/3 md:w-2/5">
+  <div class="adjusted-content flex flex-col md:flex-row justify-between">
+    <div class="md:w-2/5">
       <!-- prettier-ignore -->
       {% call sectionHeader("mb-sm md:mb-md/sm") %}
       When should I step in if someone else makes a mistake?
@@ -113,16 +156,19 @@ title: Navigating Pronouns in the Workplace
       <!-- prettier-ignore -->
       {% endcall %}
     </div>
-    <div class="w-1/3 md:w-3/5"></div>
+    <div class="flex justify-center md:w-3/5">
+      <img class="image-three" src="/images/correcting_others.png" />
+    </div>
   </div>
 </section>
 <div class="separator three">
-  <img class="image-three" src="/images/correcting_others.png" />
+  <img class="image-three-md" src="/images/correcting_others.png" />
 </div>
 <section class="section bg-sunshine">
-  <div class="adjusted-content flex-row-reverse md:flex-row">
-    <div class="w-1/3 md:w-1/2"></div>
-    <div class="w-2/3 md:w-1/2">
+  <div
+    class="adjusted-content flex flex-col md:flex-row-reverse justify-between"
+  >
+    <div class="md:w-1/2">
       <!-- prettier-ignore -->
       {% call sectionHeader("mb-sm md:mb-md/sm text-left md:text-right ") %}
       Did someone correct you? Just say
@@ -132,28 +178,34 @@ title: Navigating Pronouns in the Workplace
       <!-- prettier-ignore -->
       {% call sectionDetails("md:pl-1/3 text-left md:text-right") %}
       <em>Do not apologize.</em> An apology puts the onus on the misgendered
-      person to make the speaker feel better rather than centering the resposne
+      person to make the speaker feel better rather than centering the response
       on the feelings of the person impacted.
       <!-- prettier-ignore -->
       {% endcall %}
     </div>
+    <div class="flex justify-center md:w-1/2">
+      <img class="image-five" src="/images/when_corrected.png" />
+    </div>
   </div>
-  <img class="image-five" src="/images/when_corrected.png" />
 </section>
-<!-- <div class="separator four reverse"></div> -->
 <aside class="aside">
-  <div class="relative">
-    <!-- prettier-ignore -->
-    {% call sectionHeader("mb-sm md:mb-md/sm") %}
+  <div class="relative flex flex-col justify-between">
+    <div>
+      <!-- prettier-ignore -->
+      {% call sectionHeader("mb-sm md:mb-md/sm") %}
           Ask. Don't assume.
-    <!-- prettier-ignore -->
-    {% endcall %}
-    <!-- prettier-ignore -->
-    {% call sectionDetails() %}
+      <!-- prettier-ignore -->
+      {% endcall %}
+      <!-- prettier-ignore -->
+      {% call sectionDetails() %}
           Normalizing asking for someone's pronouns is important and helps trans and
       non-binary people everywhere!
-    <!-- prettier-ignore -->
-    {% endcall %}
+      <!-- prettier-ignore -->
+      {% endcall %}
+    </div>
+    <div class="flex justify-center">
+      <img class="image-four" src="/images/ask_pronouns.png" />
+    </div>
   </div>
 </aside>
-<img class="image-four" src="/images/ask_pronouns.png" />
+<img class="image-four-md" src="/images/ask_pronouns.png" />
