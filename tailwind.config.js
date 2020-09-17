@@ -23,8 +23,8 @@ module.exports = {
         sunshine: "#ffb331",
       },
       fontFamily: {
-        "league-spartan": ["LeagueSpartan", "sans-serif"],
-        "open-sans": ["OpenSans", "sans-serif"],
+        "league-spartan": ["League Spartan", "sans-serif"],
+        "open-sans": ["Open Sans", "sans-serif"],
         roboto: ["Roboto", "sans-serif"],
         nunito: ["Nunito", "sans-serif"],
       },
