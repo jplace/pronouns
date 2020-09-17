@@ -157,6 +157,7 @@
 }
 
 .image-two {
+  @apply self-start;
   width: 50vmin;
   @apply pt-base;
 
@@ -174,6 +175,7 @@
 }
 
 .image-three {
+  @apply self-start;
   width: 62vmin;
   @apply pt-base;
 
@@ -191,6 +193,7 @@
 }
 
 .image-four {
+  @apply self-start;
   width: 48vmin;
   @apply pt-base;
 
@@ -214,6 +217,7 @@
 }
 
 .image-five {
+  @apply self-start;
   width: 50vmin;
   @apply pt-base;
 

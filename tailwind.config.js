@@ -1,10 +1,10 @@
 module.exports = {
   theme: {
     fontSize: {
-      "header-xs": "2.5vmin",
-      "header-sm": "5vmin",
-      "header-md": "6vmin",
-      "header-lg": "9vmin",
+      "header-xs": "3.5vmin",
+      "header-sm": "4vmin",
+      "header-md": "5vmin",
+      "header-lg": "11vmin",
       "section-header": "7vmin",
       "section-detail": "3.5vmin",
       "md/header-xs": "1.25vw",
