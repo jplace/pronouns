@@ -30,6 +30,45 @@ title: Navigating Pronouns in the Workplace
 <!-- prettier-ignore -->
 {% endmacro %}
 
+<!-- prettier-ignore -->
+{% macro authors() %}
+<p
+  class="font-nunito text-header-xs md:text-md/header-xs text-black leading-tight"
+>
+  Content by Riley Pratt (<a
+    class="animated-link"
+    href="https://www.instagram.com/bae.witch/"
+    >@bae.witch</a
+  >)
+</p>
+<p
+  class="font-nunito text-header-xs md:text-md/header-xs text-black leading-tight"
+>
+  Design by Iris F (<a
+    class="animated-link"
+    href="https://www.instagram.com/book.of.iris/"
+    >@book.of.iris</a
+  >)
+</p>
+<p
+  class="font-nunito text-header-xs md:text-md/header-xs text-black leading-tight"
+>
+  Art by April Zhang (<a
+    class="animated-link"
+    href="https://www.instagram.com/apezhang/"
+    >@apezhang</a
+  >)
+</p>
+<p
+  class="font-nunito text-header-xs md:text-md/header-xs text-black leading-tight"
+>
+  Site by Jordan Place (<a class="animated-link" href="https://jplace.github.io"
+    >jplace</a
+  >)
+</p>
+<!-- prettier-ignore -->
+{% endmacro %}
+
 <section class="section bg-beige">
   <div class="flex flex-col md:flex-row justify-between">
     <div class="md:w-7/12">
@@ -48,87 +87,13 @@ title: Navigating Pronouns in the Workplace
       >
         A guide to handling instances of misgendering with grace
       </p>
-      <div class="md:hidden mb-outer">
-        <p
-          class="font-nunito text-header-xs md:text-md/header-xs text-black leading-tight"
-        >
-          Content by Riley Pratt (<a
-            class="animated-link"
-            href="https://www.instagram.com/bae.witch/"
-            >@bae.witch</a
-          >)
-        </p>
-        <p
-          class="font-nunito text-header-xs md:text-md/header-xs text-black leading-tight"
-        >
-          Design by Iris F (<a
-            class="animated-link"
-            href="https://www.instagram.com/sunny_side_vibes/"
-            >@sunny_side_vibes</a
-          >)
-        </p>
-        <p
-          class="font-nunito text-header-xs md:text-md/header-xs text-black leading-tight"
-        >
-          Art by April Zhang (<a
-            class="animated-link"
-            href="https://www.instagram.com/apezhang/"
-            >@apezhang</a
-          >)
-        </p>
-        <p
-          class="font-nunito text-header-xs md:text-md/header-xs text-black leading-tight"
-        >
-          Site by Jordan Place (<a
-            class="animated-link"
-            href="https://jplace.github.io"
-            >jplace</a
-          >)
-        </p>
-      </div>
+      <div class="md:hidden mb-outer">{{ authors() }}</div>
     </div>
     <div class="md:w-5/12"></div>
   </div>
 </section>
 <div class="separator one">
-  <div class="authors-md" aria-hidden="true">
-    <p
-      class="font-nunito text-header-xs md:text-md/header-xs text-black leading-tight"
-    >
-      Content by Riley Pratt (<a
-        class="animated-link"
-        href="https://www.instagram.com/bae.witch/"
-        >@bae.witch</a
-      >)
-    </p>
-    <p
-      class="font-nunito text-header-xs md:text-md/header-xs text-black leading-tight"
-    >
-      Design by Iris F (<a
-        class="animated-link"
-        href="https://www.instagram.com/sunny_side_vibes/"
-        >@sunny_side_vibes</a
-      >)
-    </p>
-    <p
-      class="font-nunito text-header-xs md:text-md/header-xs text-black leading-tight"
-    >
-      Art by April Zhang (<a
-        class="animated-link"
-        href="https://www.instagram.com/apezhang/"
-        >@apezhang</a
-      >)
-    </p>
-    <p
-      class="font-nunito text-header-xs md:text-md/header-xs text-black leading-tight"
-    >
-      Site by Jordan Place (<a
-        class="animated-link"
-        href="https://jplace.github.io"
-        >jplace</a
-      >)
-    </p>
-  </div>
+  <div class="authors-md" aria-hidden="true">{{ authors() }}</div>
   <img class="image-one-md" src="/images/when_corrected.png" alt="" />
 </div>
 <section class="section bg-tan">
