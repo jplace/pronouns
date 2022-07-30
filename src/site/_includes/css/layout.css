@@ -132,7 +132,7 @@
 
 .authors-md {
   @apply absolute;
-  bottom: 46%;
+  bottom: 30%;
   left: 0;
   @apply p-outer;
 

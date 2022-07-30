@@ -1,12 +1,14 @@
 module.exports = {
   theme: {
     fontSize: {
+      "header-xxs": "2.5vmin",
       "header-xs": "3.5vmin",
       "header-sm": "4vmin",
       "header-md": "5vmin",
       "header-lg": "11vmin",
       "section-header": "7vmin",
       "section-detail": "3.5vmin",
+      "md/header-xxs": "1vw",
       "md/header-xs": "1.25vw",
       "md/header-sm": "2.5vw",
       "md/header-md": "3vw",
@@ -40,6 +42,7 @@ module.exports = {
       },
       lineHeight: {
         bound: "1.125",
+        shareable: "1.5625"
       },
       padding: { "1/3": "33.333333%" },
     },
